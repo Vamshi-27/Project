@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+<title>Insert Book</title>
+</head>
+<body>
+  <h1>Insert Book</h1>
+  <form method="post">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+    <br>
+    <label for="book_name">Book Name:</label>
+    <input type="text" id="book_name" name="book_name" required>
+    <br>
+    <label for="cost">Cost:</label>
+    <input type="text" id="cost" name="cost" required>
+    <br>
+    <label for="rating">Rating:</label>
+    <input type="text" id="rating" name="rating" required>
+    <br>
+    <input type="submit" value="Insert">
+  </form>
+</body>
+</html>

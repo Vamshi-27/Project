@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+<title>Update Book</title>
+</head>
+<body>
+  <h1>Update Book</h1>
+  <form method="post">
+    <label for="book_name">Book Name:</label>
+    <input type="text" id="book_name" name="book_name" value="{{ book[1] }}" required>
+    <br>
+    <label for="cost">Cost:</label>
+    <input type="text" id="cost" name="cost" value="{{ book[2] }}" required>
+    <br>
+    <label for="rating">Rating:</label>
+    <input type="text" id="rating" name="rating" value="{{ book[3] }}" required>
+    <br>
+    <input type="submit" value="Update">
+  </form>
+</body>
+</html>
+    
